@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page Sederhana</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
+    body {
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #0e76a8;
+      color: white;
+      padding: 20px 40px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-color: #e3f2fd;
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary {
+      padding: 12px 25px;
+      background-color: #0e76a8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 60px 40px;
+      background-color: white;
+    }
+
+    .feature {
+      flex: 1;
+      margin: 0 20px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      color: #0e76a8;
+    }
+
+    .testimonials {
+      padding: 60px 40px;
+      background-color: #fafafa;
+    }
+
+    .testimonial {
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0e76a8;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>BrandKu</h1>
+      <ul>
+        <li><a href="#fitur">Fitur</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Solusi Digital Terbaik Untuk Bisnismu</h1>
+    <p>Tingkatkan produktivitas dan jangkau lebih banyak pelanggan dengan platform kami.</p>
+    <button class="btn-primary">Coba Sekarang</button>
+  </section>
+
+  <section class="features" id="fitur">
+    <div class="feature">
+      <h3>Mudah Digunakan</h3>
+      <p>Antarmuka yang sederhana dan intuitif untuk semua kalangan.</p>
+    </div>
+    <div class="feature">
+      <h3>Hemat Biaya</h3>
+      <p>Layanan efisien yang sesuai dengan anggaran bisnismu.</p>
+    </div>
+    <div class="feature">
+      <h3>Dukungan 24/7</h3>
+      <p>Tim support kami siap membantu kapan saja.</p>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimoni">
+    <h2 style="text-align:center; margin-bottom:30px;">Apa Kata Mereka?</h2>
+    <div class="testimonial">
+      "Layanan ini benar-benar mengubah cara saya menjalankan bisnis. Sangat direkomendasikan!" – Budi, Pengusaha
+    </div>
+    <div class="testimonial">
+      "Tim supportnya luar biasa. Cepat tanggap dan profesional." – Sari, Freelancer
+    </div>
+  </section>
+
+  <footer id="kontak">
+    <p>&copy; 2025 BrandKu. Semua Hak Dilindungi.</p>
+  </footer>
+
+</body>
+</html>
