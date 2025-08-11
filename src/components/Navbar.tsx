@@ -54,7 +54,7 @@ const Navbar = () => {
           <ul className="space-y-2">
             <li>
               <a
-                href="#"
+                href="#product"
                 className="block text-gray-900 p-2 hover:bg-amber-400 dark:hover:bg-amber-500 rounded transition-colors"
               >
                 Product
@@ -62,7 +62,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#testimoni"
                 className="block text-gray-900 p-2 hover:bg-amber-400 dark:hover:bg-amber-500 rounded transition-colors"
               >
                 Testimoni
@@ -70,7 +70,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#about"
                 className="block text-gray-900 p-2 hover:bg-amber-400 dark:hover:bg-amber-500 rounded transition-colors"
               >
                 About
@@ -78,7 +78,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#contact"
                 className="block text-gray-900  p-2 hover:bg-amber-400 dark:hover:bg-amber-500 rounded transition-colors"
               >
                 Contact
@@ -101,12 +101,12 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="text-gray-900  transition-colors">
+              <a href="#about" className="text-gray-900  transition-colors">
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="text-gray-900  transition-colors">
+              <a href="#contact" className="text-gray-900  transition-colors">
                 Contact
               </a>
             </li>

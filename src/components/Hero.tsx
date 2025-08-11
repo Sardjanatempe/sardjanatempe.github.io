@@ -6,11 +6,12 @@ function Hero() {
       <section className="relative h-[calc(75vh)] lg:h-[calc(70vh)] flex items-end overflow-hidden">
         {/* Background Image with Overlay */}
         <div
-          className="absolute inset-0 z-0 bg-fixed"
+          className="absolute inset-0 z-0"
           style={{
             backgroundImage: "url('/gila.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
+            backgroundAttachment: "scroll",
           }}
         >
           <div

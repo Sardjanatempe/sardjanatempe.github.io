@@ -129,7 +129,7 @@ function App() {
             </Card>
           </div>
         </Section>
-        <Section title="About Us" className="bg-gray-100 dark:bg-gray-800">
+        <Section title="About Us" className="bg-gray-100 dark:bg-gray-800" id="about">
           <p className="text-gray-700 dark:text-gray-300">
             Welcome to SARDJANA TEMPE, where we bring you the finest culinary
             experiences. Our mission is to provide delicious, high-quality food
@@ -144,6 +144,7 @@ function App() {
         <Section
           title="Contact Us"
           className="bg-gray-100 dark:bg-gray-800 h-[calc(100vh-40rem)] lg:h-[calc(100vh-32rem)]"
+          id="contact"
         >
           <p className="text-gray-700 dark:text-gray-300">
             Have questions or feedback? We'd love to hear from you! Reach out to
