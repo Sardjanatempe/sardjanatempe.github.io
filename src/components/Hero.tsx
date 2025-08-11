@@ -3,58 +3,61 @@ import TypeWriter from "./TypeWriter";
 function Hero() {
   return (
     <div className="mt-10">
-      <section className="relative h-[calc(100vh)] flex items-center overflow-hidden">
+      <section className="relative h-[calc(75vh)] lg:h-[calc(70vh)] flex items-end overflow-hidden">
         {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?auto=format&fit=crop&q=80"
-            alt="Background"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-blue-900/80 to-purple-900/90"></div>
+        <div
+          className="absolute inset-0 z-0 bg-fixed"
+          style={{
+            backgroundImage: "url('/gila.jpeg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div
+            className="absolute inset-0 bg-gradient-to-br from-red-500 via-red-600 to-amber-900/95 opacity-55
+                backdrop-blur-sm shadow-[inset_0_50px_120px_rgba(255,72,0,0.25)]"
+          ></div>
         </div>
 
         <div className="flex flex-col items-center justify-center text-center w-full h-full relative z-10 text-white">
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-amber-200 to-red-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&q=80"
+              src="/gila.jpeg"
               alt="Profile"
-              className="relative rounded-full w-24 h-24 sm:w-32 sm:h-32 mb-4 border-2 border-white/50 shadow-lg transform hover:scale-105 transition-all duration-300 object-cover"
+              className="relative rounded-full w-48 h-48 sm:w-40 sm:h-40 mb-4 border-2 border-white/50 shadow-lg transform hover:scale-105 transition-all duration-300 object-cover"
             />
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 tracking-tight">
-            Emil Abdul N
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-amber-500 animate-gradient-x">
+            Sardjana Tempe
           </h1>
           <div className="h-8 mb-4">
             <TypeWriter
               texts={[
-                "Full Stack Developer",
-                "React Specialist",
-                "TypeScript Enthusiast",
-                "UI/UX Designer",
+                "Makanan Enak",
+                "Makanan Halal",
+                "Makanan Sehat",
+                "Makanan Terjamin",
               ]}
               className="text-lg sm:text-xl opacity-90"
             />
           </div>
-          <div className="flex gap-6">
+          <p className="max-w-md mx-auto text-lg sm:text-xl text-center">
+            Kami menawarkan aneka makanan nusantara yang enak, sehat, halal, dan
+            terjamin kualitasnya untuk Anda.
+          </p>
+          <div className="flex gap-6 mt-6">
             <a
               href="#"
-              className="hover:text-blue-200 dark:hover:text-blue-300 transition-colors hover:scale-110 transform"
+              className="hover:text-white dark:hover:text-white transition-colors hover:scale-110 transform"
             >
-              <i className="fab fa-github text-xl sm:text-2xl"></i>
+              <i className="fab fa-whatsapp text-xl sm:text-2xl"></i>
             </a>
             <a
               href="#"
-              className="hover:text-blue-200 dark:hover:text-blue-300 transition-colors hover:scale-110 transform"
+              className="hover:text-white dark:hover:text-white transition-colors hover:scale-110 transform"
             >
-              <i className="fab fa-linkedin text-xl sm:text-2xl"></i>
-            </a>
-            <a
-              href="#"
-              className="hover:text-blue-200 dark:hover:text-blue-300 transition-colors hover:scale-110 transform"
-            >
-              <i className="fab fa-twitter text-xl sm:text-2xl"></i>
+              <i className="fab fa-instagram text-xl sm:text-2xl"></i>
             </a>
           </div>
         </div>

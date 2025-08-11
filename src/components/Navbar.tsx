@@ -5,17 +5,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white dark:bg-gray-900 p-4 fixed w-full top-0 z-50">
+    <nav className="bg-gradient-to-r from-amber-400 to-amber-500 dark:bg-gray-900 p-4 fixed w-full top-0 z-50">
       <div className="container mx-auto px-4 w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
         <div className="flex justify-between items-center">
-          <div className="text-gray-900 dark:text-white text-xl font-bold">
-            SARDJANA TEMPE
-          </div>
+          <div className="text-gray-900  text-xl font-bold">SARDJANA TEMPE</div>
           <div className="flex items-center space-x-4">
             <ThemeSwitch />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden text-gray-900 dark:text-white focus:outline-none hover:text-gray-300 transition-colors"
+              className="lg:hidden text-gray-900  focus:outline-none transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -57,15 +55,23 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block text-gray-900 dark:text-white p-2 hover:bg-gray-700 dark:hover:bg-gray-800 rounded transition-colors"
+                className="block text-gray-900 p-2 hover:bg-amber-400 dark:hover:bg-amber-500 rounded transition-colors"
               >
-                Home
+                Product
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="block text-gray-900 dark:text-white p-2 hover:bg-gray-700 dark:hover:bg-gray-800 rounded transition-colors"
+                className="block text-gray-900 p-2 hover:bg-amber-400 dark:hover:bg-amber-500 rounded transition-colors"
+              >
+                Testimoni
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block text-gray-900 p-2 hover:bg-amber-400 dark:hover:bg-amber-500 rounded transition-colors"
               >
                 About
               </a>
@@ -73,15 +79,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block text-gray-900 dark:text-white p-2 hover:bg-gray-700 dark:hover:bg-gray-800 rounded transition-colors"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block text-gray-900 dark:text-white p-2 hover:bg-gray-700 dark:hover:bg-gray-800 rounded transition-colors"
+                className="block text-gray-900  p-2 hover:bg-amber-400 dark:hover:bg-amber-500 rounded transition-colors"
               >
                 Contact
               </a>
@@ -93,34 +91,22 @@ const Navbar = () => {
         <div className="hidden lg:flex lg:items-center">
           <ul className="flex space-x-8">
             <li>
-              <a
-                href="#"
-                className="text-gray-900 dark:text-white hover:text-gray-300 transition-colors"
-              >
-                Home
+              <a href="#product" className="text-gray-900  transition-colors">
+                Product
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="text-gray-900 dark:text-white hover:text-gray-300 transition-colors"
-              >
+              <a href="#testimoni" className="text-gray-900 transition-colors">
+                Testimoni
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-900  transition-colors">
                 About
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="text-gray-900 dark:text-white hover:text-gray-300 transition-colors"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-900 dark:text-white hover:text-gray-300 transition-colors"
-              >
+              <a href="#" className="text-gray-900  transition-colors">
                 Contact
               </a>
             </li>
