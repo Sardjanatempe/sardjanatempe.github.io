@@ -17,51 +17,45 @@ function App() {
           className="bg-gray-100 dark:bg-gray-800 pt-16"
           id="product"
         >
-          <ul className="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 gap-6">
+          <ul className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-2 md:gap-6">
             {[
               {
                 name: "Abon Ayam Variant Original 100gr",
-                image: "/foto.jpg",
+                image: "/ori.jpeg",
                 bestSeller: true,
                 outOfStock: false,
               },
               {
                 name: "Abon Ayam Variant Spicy 100gr",
-                image: "/foto.jpg",
+                image: "/pedas.jpeg",
                 outOfStock: false,
               },
               {
                 name: "Abon Ayam Variant Original 70gr",
-                image: "/foto.jpg",
-                outOfStock: false,
-              },
-              {
-                name: "Abon Ayam Variant Spicy 70gr",
-                image: "/foto.jpg",
-                outOfStock: false,
-              },
-              {
-                name: "Tempe Gila Variant Original 100gr",
-                image: "/tempe.jpg",
+                image: "/coming.jpg",
                 outOfStock: true,
               },
               {
-                name: "Tempe Gila Variant Spicy 100gr",
-                image: "/tempe.jpg",
+                name: "Abon Ayam Variant Spicy 70gr",
+                image: "/coming.jpg",
                 outOfStock: true,
               },
             ].map(({ name, image, bestSeller, outOfStock }) => (
               <Card
-                className="p-6 bg-white dark:bg-gray-900 shadow-lg flex flex-col justify-between h-full"
+                className="p-4 md:p-6 bg-white dark:bg-gray-900 shadow-lg flex flex-col justify-between h-full w-full"
                 key={name}
               >
-                <img
-                  src={image}
-                  alt={name}
-                  className="h-48 w-full rounded-lg mb-4 object-cover"
-                />
+                <div className="flex-col items-start">
+                  <img
+                    src={image}
+                    alt={name}
+                    className="h-36 lg:h-48 w-full rounded-lg mb-4 object-cover"
+                  />
+                  <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold">
+                    {name}
+                  </h3>
+                </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">{name}</h3>
                   {bestSeller && (
                     <span className="inline-block bg-yellow-300 text-yellow-900 px-2 py-1 rounded-full text-xs font-bold">
                       Best Seller
@@ -78,7 +72,7 @@ function App() {
                   href={
                     outOfStock
                       ? undefined
-                      : `https://wa.me/081802090774?text=saya%20ingin%20memesan%20${encodeURIComponent(
+                      : `https://wa.me/6282217606010?text=saya%20ingin%20memesan%20${encodeURIComponent(
                           name
                         )}`
                   }
@@ -105,7 +99,7 @@ function App() {
           <div className="grid grid-cols-1 gap-6">
             <Card className="h-40 lg:h-32 p-8 bg-gray-50 dark:bg-gray-700 shadow-md border border-gray-200 dark:border-gray-600 flex items-center justify-center">
               <p className="text-center font-bold text-gray-600 dark:text-gray-200">
-                "Tempe terbaik yang pernah saya coba! Saya akan memesan lagi"
+                "Abon terbaik yang pernah saya coba! Saya akan memesan lagi"
               </p>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400">
                 - Andi, Chef
@@ -113,7 +107,7 @@ function App() {
             </Card>
             <Card className="h-40 lg:h-32 p-8 bg-gray-50 dark:bg-gray-700 shadow-md border border-gray-200 dark:border-gray-600 flex items-center justify-center">
               <p className="text-center font-bold text-gray-600 dark:text-gray-200">
-                "Saya sangat puas dengan tempe yang dijual"
+                "Saya sangat puas dengan abon yang dijual"
               </p>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400">
                 - Budi, Food Critic
@@ -121,15 +115,19 @@ function App() {
             </Card>
             <Card className="h-40 lg:h-32 p-8 bg-gray-50 dark:bg-gray-700 shadow-md border border-gray-200 dark:border-gray-600 flex items-center justify-center">
               <p className="text-center font-bold text-gray-600 dark:text-gray-200">
-                "Tempe terenak yang pernah saya coba"
+                "Abon terenak yang pernah saya coba"
               </p>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                - Siti, Culinary Blogger
+                - Siti, Culinary Vlogger
               </p>
             </Card>
           </div>
         </Section>
-        <Section title="About Us" className="bg-gray-100 dark:bg-gray-800" id="about">
+        <Section
+          title="About Us"
+          className="bg-gray-100 dark:bg-gray-800"
+          id="about"
+        >
           <p className="text-gray-700 dark:text-gray-300">
             Welcome to SARDJANA TEMPE, where we bring you the finest culinary
             experiences. Our mission is to provide delicious, high-quality food

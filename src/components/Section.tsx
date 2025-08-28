@@ -20,7 +20,7 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section id={id} className={`py-8 ${className}`}>
       {title ? (
-        <div className="container mx-auto px-4 w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
+        <div className="container mx-auto px-4 w-full lg:w-3/4 xl:w-2/3">
           <h2 className={titleClassName}>{title}</h2>
           <div className={contentClassName}>{children}</div>
         </div>
