@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "name": "Abon Ayam Variant Original 100gr",
+    "image": "/ori.jpeg",
+    "bestSeller": true,
+    "outOfStock": false
+  },
+  {
+    "id": 2,
+    "name": "Abon Ayam Variant Spicy 100gr",
+    "image": "/pedas.jpeg",
+    "outOfStock": false
+  },
+  {
+    "id": 3,
+    "name": "Abon Ayam Variant Original 70gr",
+    "image": "/coming.jpg",
+    "outOfStock": true
+  },
+  {
+    "id": 4,
+    "name": "Abon Ayam Variant Spicy 70gr",
+    "image": "/coming.jpg",
+    "outOfStock": true
+  },
+  {
+    "id": 5,
+    "name": "Abon Ayam Variant Original 150gr",
+    "image": "/coming.jpg",
+    "outOfStock": true
+  },
+  {
+    "id": 6,
+    "name": "Abon Ayam Variant Spicy 150gr",
+    "image": "/coming.jpg",
+    "outOfStock": true
+  },
+  {
+    "id": 7,
+    "name": "Abon Ayam Variant Original 200gr",
+    "image": "/coming.jpg",
+    "outOfStock": true
+  },
+  {
+    "id": 8,
+    "name": "Abon Ayam Variant Spicy 200gr",
+    "image": "/coming.jpg",
+    "outOfStock": true
+  },
+  {
+    "id": 9,
+    "name": "Abon Ayam Variant Original 250gr",
+    "image": "/coming.jpg",
+    "outOfStock": true
+  },
+  {
+    "id": 10,
+    "name": "Abon Ayam Variant Spicy 250gr",
+    "image": "/coming.jpg",
+    "outOfStock": true
+  }
+]
