@@ -120,7 +120,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${r.do
 
 `;s.forEach((j,B)=>{const G=j.price*j.qty;g+=`${B+1}. ${j.name} (x${j.qty}) → Rp ${G.toLocaleString("id-ID")}
 `});const S=s.reduce((j,B)=>j+B.price*B.qty,0);g+=`
---------------------------
+----------------------------------------------
 `,g+=`Total: Rp ${S.toLocaleString("id-ID")}
 `,g+=`
-*) Harga belum termasuk ongkir.`;const M=`https://wa.me/6281802090774?text=${encodeURIComponent(g)}`;window.open(M,"_blank")};return y.jsx(y.Fragment,{children:y.jsx(Sy,{children:y.jsxs(Np,{children:[y.jsx(M0,{}),y.jsx(z0,{}),y.jsx(zp,{cart:s,onAddToCart:d,onRemoveFromCart:m}),y.jsx(D0,{}),y.jsx(_0,{}),y.jsx(C0,{}),y.jsx(Tp,{cart:s,onRemoveFromCart:m,onAddToCart:d,onCheckout:E})]})})})}by.createRoot(document.getElementById("root")).render(y.jsx(T.StrictMode,{children:y.jsx(Dp,{})}));
+*) Harga belum termasuk ongkir.`;const M=`https://wa.me/6282217606010?text=${encodeURIComponent(g)}`;window.open(M,"_blank")};return y.jsx(y.Fragment,{children:y.jsx(Sy,{children:y.jsxs(Np,{children:[y.jsx(M0,{}),y.jsx(z0,{}),y.jsx(zp,{cart:s,onAddToCart:d,onRemoveFromCart:m}),y.jsx(D0,{}),y.jsx(_0,{}),y.jsx(C0,{}),y.jsx(Tp,{cart:s,onRemoveFromCart:m,onAddToCart:d,onCheckout:E})]})})})}by.createRoot(document.getElementById("root")).render(y.jsx(T.StrictMode,{children:y.jsx(Dp,{})}));

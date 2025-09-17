@@ -83,12 +83,12 @@ function App() {
       0
     );
 
-    message += `\n--------------------------\n`;
+    message += `\n----------------------------------------------\n`;
     message += `Total: Rp ${totalAmount.toLocaleString("id-ID")}\n`;
     message += `\n*) Harga belum termasuk ongkir.`;
 
     // Nomor WhatsApp (tanpa tanda + atau 0, pakai kode negara)
-    const phoneNumber = "6281802090774"; // contoh: 62 untuk Indonesia, lalu 812... tanpa 0
+    const phoneNumber = "6282217606010"; // contoh: 62 untuk Indonesia, lalu 812... tanpa 0
 
     // Encode & buka WhatsApp
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
