@@ -30,7 +30,7 @@ const CardSection = ({ onAddToCart }: CardSectionProps) => {
 
   return (
     <>
-      <Section title="Card Example" id="card-example">
+      <Section title="Product" id="product">
         <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-2 md:gap-4">
           {products.map(({ id, name, image, bestSeller, outOfStock }) => (
             <CardProduct key={id}>
