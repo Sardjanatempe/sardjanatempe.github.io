@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gradient-to-r from-amber-400 to-amber-500 dark:bg-gray-900 p-4 fixed w-full top-0 z-50">
-      <div className="container mx-auto px-4 w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
+      <div className="container mx-auto px-4 w-full md:w-3/4 lg:w-2/3 xl:w-2/3">
         <div className="flex justify-between items-center">
           <div className="text-gray-900  text-xl font-bold">SARDJANA TEMPE</div>
           <div className="flex items-center space-x-4">

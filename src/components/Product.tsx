@@ -8,24 +8,10 @@ type ProductListProps = {
 };
 
 const ProductList = ({ products }: ProductListProps) => {
-  const handleAddToCart = (product: Product) => {
-    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
-    const existingProduct = cart.find(
-      (item: Product) => item.id === product.id
-    );
-    if (existingProduct) {
-      existingProduct.quantity += 1;
-    } else {
-      cart.push({ ...product, quantity: 1 });
-    }
-    localStorage.setItem("cart", JSON.stringify(cart));
-    console.log("Add to cart:", product);
-  };
-
   return (
     <Section
       title="Products"
-      className="bg-gray-100 dark:bg-gray-800 pt-16"
+      className="bg-gray-100 dark:bg-gray-800 pt-16 flex flex-col"
       id="product"
     >
       <ul className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-2 md:gap-4">
@@ -81,22 +67,7 @@ const ProductList = ({ products }: ProductListProps) => {
                       {outOfStock ? "Coming Soon" : "Order Now"}
                     </Button>
                   </a>
-                  {!outOfStock && (
-                    <Button
-                      className="w-1/4"
-                      onClick={() =>
-                        handleAddToCart({
-                          id,
-                          name,
-                          image,
-                          bestSeller,
-                          outOfStock,
-                        })
-                      }
-                    >
-                      Add
-                    </Button>
-                  )}
+                  {!outOfStock && <Button className="w-1/4">Add</Button>}
                 </div>
               </div>
               {/* Button */}
