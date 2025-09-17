@@ -18,7 +18,10 @@ const Section: React.FC<SectionProps> = ({
   contentClassName = "space-y-4",
 }) => {
   return (
-    <section id={id} className={`py-8 ${className}`}>
+    <section
+      id={id}
+      className={`py-8 pt-16 bg-gray-100 dark:bg-gray-800 ${className}`}
+    >
       {title ? (
         <div className="container mx-auto px-4 w-full lg:w-3/4 xl:w-2/3">
           <h2 className={titleClassName}>{title}</h2>
